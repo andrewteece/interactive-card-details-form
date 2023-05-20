@@ -33,6 +33,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 
 /* GLOBAL STYLES */
 
@@ -49,9 +54,79 @@ body {
 
 /* LAYOUT STYLES */
 
+.container {
+   /* max-inline-size: 75rem;
+    padding-inline: 2rem;
+    margin-inline: auto;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: grid; */
+    border: 2px solid orangered;
+}
+
+.card {
+    position: relative;
+}
 
 
+.card__front,
+.card__back {
+    border: 2px solid limegreen;
+}
 
+.card__front {
+  --card-padding: 2rem;   /* local scope custom property */    
+
+  z-index: 2;
+  bottom: 0;
+}
+
+.card__back {
+    right: 0;
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: min-content;
+    border-color: red; 
+}
+
+.card__front > *:not(.card__front--bg),
+.card__back > *:not(.card__back--bg) {
+    position: absolute;
+}
+
+.card__front--bg,
+.card__back--bg {
+    max-width: revert;
+}
+
+.card__front--logo {
+  top: var(--card-padding);
+  left: var(--card-padding);
+}
+
+.card__front--number {
+    top: 54%;
+    left: var(--card-padding);
+    font-size: 1.925rem;
+}
+
+.card__front--name {
+    bottom: var(--card-padding);
+    left: var(--card-padding);
+}
+
+.card__front--expire {
+    right: var(--card-padding);
+    bottom: var(--card-padding);
+}
+
+.card__back--cvc {
+    right: 3.5rem;
+    top: 44%;
+}
 
 
 
