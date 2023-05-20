@@ -1,7 +1,45 @@
 :root {
+  --color-scheme: var(--dark-mode);
 
-    --ff-base: 'Space Grotesk', sans-serif;
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(279, 6%, 55%);
+  --clr-neutral-600: hsl(278, 68%, 11%);
+
+  --clr-primary-400: hsl(249, 99%, 64%);
+  --clr-primary-500: hsl(278, 94%, 30%);
+  --clr-primary-800: hsl(278, 68%, 11%);
+
+  --clr-error-400: hsl(0, 100%, 66%); /* input errors */
+
+  --clr-active: var(--clr-primary-400, --clr-primary500); 
+
+  --ff-base: "Space Grotesk", sans-serif;
+
+  --fs-accent: 1rem;
+  --fs-base: 1.125rem;
+
+  --fw-regular: 400;
+  --fw-bold: 500;
+
+  --no-dark-mode: light;
+  --dark-mode: dark light ;
 }
+
+
+
+### Primary
+
+- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+
+
+
+
+
+
+
+
+
+
 
 
 
