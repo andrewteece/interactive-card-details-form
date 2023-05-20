@@ -25,11 +25,31 @@
   --dark-mode: dark light ;
 }
 
+/* BASIC CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 
-### Primary
+/* GLOBAL STYLES */
 
-- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+html {
+    color: var(--color-scheme);
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-base);
+    font-size: var(--fs-accent);
+    line-height: 1.5;
+}
+
+/* LAYOUT STYLES */
+
+
 
 
 
